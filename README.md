@@ -75,12 +75,12 @@ InstaNumCreator is a Python script designed to automate the creation of Instagra
     "proxy": "Proxy",
 }
 ```
-- **Optional feature:**
+- **Optional feature:** This freature is optional as per your requirement
 ```{
     "number": "Number",
     "proxy": "Proxy",
-    "full_name": 'Full name', 
-    "password": 'Password',
+    "full_name": 'Full name', // You can pass your required full name (and the api will generate available username accourding to your full name 
+    "password": 'Password', // Password 
 }
 ```
 - **cURL Example:**
