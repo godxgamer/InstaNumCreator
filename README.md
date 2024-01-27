@@ -82,7 +82,7 @@ curl -X POST \
   }'
 ```
 
-## Verify OTP and Create Account
+### 1. Verify OTP and Create Account
 - **Baseurl:** `http://128.140.99.16:5623`
 - **Endpoint:** `/api/insta/android/number/create`
 - **Method:** `POST`
