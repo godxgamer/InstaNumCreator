@@ -70,13 +70,15 @@ InstaNumCreator is a Python script designed to automate the creation of Instagra
   }
   ```
 - **Request Body:**
-```{
+```json
+{
     "number": "Number",
     "proxy": "Proxy",
 }
 ```
 - **Optional feature:** This freature is optional as per your requirement
-```{
+```json
+{
     "number": "Number",
     "proxy": "Proxy",
     "full_name": 'Full name', // You can pass your required full name (and the api will generate available username accourding to your full name 
@@ -108,7 +110,8 @@ curl -X POST \
 }
 ```
 - **Request Body:**
-```{
+```json
+{
     "otp": "6 digit sms verification code",
     "proxy": "username:password@host:port",
     "client_data": "response body from send sms api ",  // Response from the first API call 
