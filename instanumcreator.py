@@ -1,4 +1,4 @@
-print("This is an example to use api in python manually , You can connect any sms site and proxy and automate the account creation process faster without any issue in any language")
+print("This is an example to use api in python manually , You can connect any sms site and proxy and automate the account creation process faster without any issue in any language\n\n\n")
 
 import requests
 
