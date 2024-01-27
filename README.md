@@ -1,10 +1,10 @@
-# InstaNumCreator - Instagram Account Number Creator
+# InstaNumCreator 
 
 InstaNumCreator is a Python script designed to automate the creation of Instagram accounts using numerical patterns. This script leverages the InstaGenPro API, allowing users to streamline the process of creating multiple Instagram accounts efficiently.
 
 ## Features
 
-- Seamless integration with the InstaGenPro API.
+- Seamless integration with the InstaNumCreator API.
 - User-friendly interface for quick account creation.
 - Proxy support for secure and anonymous operations.
 - SMS-based OTP verification for enhanced security.
