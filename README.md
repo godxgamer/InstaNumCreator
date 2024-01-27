@@ -48,7 +48,7 @@ python instanumcreator.py
 
 ## Overview
 
-InstaNumCreator is a Python script designed to automate the creation of Instagram accounts using numerical patterns. This script utilizes the InstaGenPro API to streamline the process of creating multiple Instagram accounts efficiently.
+InstaNumCreator is a Python script designed to automate the creation of Instagram accounts using numerical patterns. This script utilizes the InstaNumCreator API to streamline the process of creating multiple Instagram accounts efficiently.
 
 ## API Endpoints
 
@@ -61,7 +61,7 @@ InstaNumCreator is a Python script designed to automate the creation of Instagra
   ```json
   {
       "Content-Type": "application/json",
-      "X-API-Key": "None"
+      "X-API-Key": "Your-API-Key"
   }
   ```
 - **Request Body:**
@@ -73,7 +73,7 @@ InstaNumCreator is a Python script designed to automate the creation of Instagra
 - **cURL Example:**
 ```
 curl -X POST \
-  http://128.140.99.16:5622/api/insta/android/number/send \
+  http://128.140.99.16:5623/api/insta/android/number/send \
   -H 'Content-Type: application/json' \
   -H 'X-API-Key: Your-API-Key' \
   -d '{
@@ -81,6 +81,41 @@ curl -X POST \
     "proxy": "username:password@host:port",
   }'
 ```
+
+## Verify OTP and Create Account
+- **Baseurl:** `http://128.140.99.16:5623`
+- **Endpoint:** `/api/insta/android/number/create`
+- **Method:** `POST`
+- **Description:** Verifies the OTP and creates an Instagram account using the provided number.
+- **Request Headers:**
+```json
+{
+    "Content-Type": "application/json",
+    "X-API-Key": "Your-API-Key"
+}
+```
+- **Request Body:**
+```{
+    "otp": "6 digit sms verification code",
+    "proxy": "username:password@host:port",
+    "client_data": "response body from send sms api ",  // Response from the first API call 
+}
+```
+- **cURL Example:**
+```
+curl -X POST \
+  http://128.140.99.16:5623/api/insta/android/number/create \
+  -H 'Content-Type: application/json' \
+  -H 'X-API-Key: Your-API-Key' \
+  -d '{
+    "otp": "123456",
+    "proxy": "username:password@host:port",
+    "client_data":"response body from send sms api ",
+  }'
+```
+
+
+
 
 
 
