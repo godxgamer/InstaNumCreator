@@ -42,3 +42,45 @@ Execute the script by running:
 
 ```bash
 python instanumcreator.py
+```
+
+## InstaNumCreator API Documentation
+
+## Overview
+
+InstaNumCreator is a Python script designed to automate the creation of Instagram accounts using numerical patterns. This script utilizes the InstaGenPro API to streamline the process of creating multiple Instagram accounts efficiently.
+
+## API Endpoints
+
+### 1. Send OTP to Email
+- **Baseurl:** `http://128.140.99.16:5623`
+- **Endpoint:** `/api/insta/android/number/send`
+- **Method:** `POST`
+- **Description:** Sends an OTP to the provided number for Instagram registration.
+- **Request Headers:**
+  ```json
+  {
+      "Content-Type": "application/json",
+      "X-API-Key": "None"
+  }
+  ```
+- **Request Body:**
+```{
+    "number": "Number",
+    "proxy": "Proxy",
+}
+```
+- **cURL Example:**
+```
+curl -X POST \
+  http://128.140.99.16:5622/api/insta/android/number/send \
+  -H 'Content-Type: application/json' \
+  -H 'X-API-Key: Your-API-Key' \
+  -d '{
+    "number": "number",
+    "proxy": "username:password@host:port",
+  }'
+```
+
+
+
