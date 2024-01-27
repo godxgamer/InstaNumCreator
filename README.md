@@ -25,7 +25,7 @@ Before using InstaNumCreator, ensure you have the following:
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/yourusername/InstaNumCreator.git
+    git clone https://github.com/godxgamer/InstaNumCreator.git
     cd InstaNumCreator
     ```
 
