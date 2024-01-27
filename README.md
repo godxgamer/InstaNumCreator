@@ -69,13 +69,13 @@ InstaNumCreator is a Python script designed to automate the creation of Instagra
       "X-API-Key": "Your-API-Key"
   }
   ```
-  - **Request Body:**
+- **Request Body:**
 ```{
     "number": "Number",
     "proxy": "Proxy",
 }
 ```
-  - **Optional feature:**
+- **Optional feature:**
 ```{
     "number": "Number",
     "proxy": "Proxy",
@@ -83,7 +83,6 @@ InstaNumCreator is a Python script designed to automate the creation of Instagra
     "password": 'Password',
 }
 ```
-
 - **cURL Example:**
 ```
 curl -X POST \
